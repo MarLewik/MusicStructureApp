@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.example.marlew.musicstructureapp.MainActivity">
+
+    <TextView
+        android:id="@+id/play"
+        style="@style/CategoryStyle"
+        android:gravity="center"
+        android:background="@color/play"
+        android:text="@string/play" />
+    <TextView
+        android:id="@+id/search"
+        style="@style/CategoryStyle"
+        android:gravity="center"
+        android:background="@color/search"
+        android:text="@string/search" />
+    <TextView
+        android:id="@+id/library"
+        style="@style/CategoryStyle"
+        android:gravity="center"
+        android:background="@color/library"
+        android:text="@string/library" />
+    <TextView
+        android:id="@+id/settings"
+        style="@style/CategoryStyle"
+        android:gravity="center"
+        android:background="@color/settings"
+        android:text="@string/settings" />
+</LinearLayout>

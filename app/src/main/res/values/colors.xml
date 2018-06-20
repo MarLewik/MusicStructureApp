@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#4394e3</color>
+    <color name="primary_dark_color">#120c0b</color>
+    <color name="settings">#8b9aa7</color>
+    <color name="background">#8b8e91</color>
+    <color name="play">#43586e</color>
+    <color name="search">#425b73</color>
+    <color name="library">#46515d</color>
+    <color name="searchcolor">#7f8ca6</color>
+</resources>
