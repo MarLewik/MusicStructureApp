@@ -4,7 +4,10 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class LibraryActivity extends AppCompatActivity {
 
@@ -12,6 +15,14 @@ public class LibraryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_library);
+
+        ArrayList<Song> songs = new ArrayList<>();
+
+        //Table of 400 songs
+        for (int i=1; i<20; i++)
+            for (int j=1; j<20; j++)
+                songs.add(new Song("song"+i, "artist"+j));
+
 
         // Find the View that shows the play category
         TextView play = (TextView) findViewById(R.id.play);
@@ -39,5 +50,9 @@ public class LibraryActivity extends AppCompatActivity {
                 startActivity(mainIntent);
             }
         });
+
+        SongAdapter adapter = new SongAdapter(this, songs);
+        ListView listView = (ListView) findViewById(R.id.list);
+        listView.setAdapter(adapter);
     }
 }
