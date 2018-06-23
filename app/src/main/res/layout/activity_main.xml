@@ -10,25 +10,28 @@
     <TextView
         android:id="@+id/play"
         style="@style/CategoryStyle"
-        android:gravity="center"
         android:background="@color/play"
+        android:gravity="center"
         android:text="@string/play" />
+
     <TextView
         android:id="@+id/search"
         style="@style/CategoryStyle"
-        android:gravity="center"
         android:background="@color/search"
+        android:gravity="center"
         android:text="@string/search" />
+
     <TextView
         android:id="@+id/library"
         style="@style/CategoryStyle"
-        android:gravity="center"
         android:background="@color/library"
+        android:gravity="center"
         android:text="@string/library" />
+
     <TextView
         android:id="@+id/settings"
         style="@style/CategoryStyle"
-        android:gravity="center"
         android:background="@color/settings"
+        android:gravity="center"
         android:text="@string/settings" />
 </LinearLayout>

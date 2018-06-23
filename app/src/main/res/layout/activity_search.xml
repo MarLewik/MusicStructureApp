@@ -6,28 +6,32 @@
     android:background="@color/search"
     android:orientation="vertical"
     tools:context="com.example.marlew.musicstructureapp.MainActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/activity_vertical_margin">
+
         <Button
+            android:id="@+id/main"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/menu"
-            android:id="@+id/main"/>
+            android:text="@string/menu" />
+
         <Button
+            android:id="@+id/library"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/library"
-            android:id="@+id/library"/>
+            android:text="@string/library" />
+
         <Button
+            android:id="@+id/play"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/play"
-            android:id="@+id/play"/>
+            android:text="@string/play" />
     </LinearLayout>
 
     <TextView
@@ -35,13 +39,15 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="@string/search"
-        android:textSize="34sp"/>
+        android:textSize="34sp" />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/activity_vertical_margin"
-        android:text="@string/search_title"
-        android:background="@color/searchcolor"/>
+        android:background="@color/searchcolor"
+        android:text="@string/search_title" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -49,9 +55,10 @@
         android:layout_margin="@dimen/activity_vertical_margin"
         android:text="@string/searchText"
         android:textSize="18sp" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="@string/shuffle"/>
+        android:text="@string/shuffle" />
 </LinearLayout>
